@@ -35,8 +35,8 @@ public class Solution {
         for (int i=1; i<strs.Length; i++) {
             while (!strs[i].StartsWith(prefix))
                 prefix = prefix[..^1];
-            if (prefix.Length == 0)
-                break;
+                if (prefix.Length == 0)
+                    break;
         }
 
         return prefix;
