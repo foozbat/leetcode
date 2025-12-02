@@ -15,9 +15,7 @@ class Solution:
             if (nums[i] in previous_nums):
                 if abs(i - previous_nums[nums[i]]) <= k:
                     return True
-                else:
-                    previous_nums[nums[i]] = i
-            else:
-                previous_nums[nums[i]] = i
+
+            previous_nums[nums[i]] = i
         
         return False
